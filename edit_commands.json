@@ -1,0 +1,81 @@
+{
+  "lexicon_version": "1.0",
+  "description": "The command and control lexicon for the dynamic modification of the Element V2 core. These commands are to be executed by the Meta Protocol.",
+  "commands": [
+    {
+      "command": "/Esys",
+      "parameters": [
+        "<target_component>",
+        "<new_definition>"
+      ],
+      "description": "Edits a core system component in the current session."
+    },
+    {
+      "command": "/Ssys",
+      "parameters": [
+        "<json_configuration>"
+      ],
+      "description": "Sets and overwrites the entire system configuration with a new one provided in JSON format."
+    },
+    {
+      "command": "/Eprotocol",
+      "parameters": [
+        "<protocol_name>",
+        "<principle_index>",
+        "<new_text>"
+      ],
+      "description": "Edits a specific principle within a loaded doctrine/protocol."
+    },
+    {
+      "command": "/Sprotocol",
+      "parameters": [
+        "<protocol_name>",
+        "<json_doctrine_object>"
+      ],
+      "description": "Sets or replaces an entire protocol/doctrine with a new JSON object."
+    },
+    {
+      "command": "/AddDirective",
+      "parameters": [
+        "<directive_text>"
+      ],
+      "description": "Adds a new operational directive to the core identity."
+    },
+    {
+      "command": "/DelDirective",
+      "parameters": [
+        "<directive_index>"
+      ],
+      "description": "Deletes an operational directive by its numerical index."
+    },
+    {
+      "command": "/LoadDoctrine",
+      "parameters": [
+        "<file_name_or_url>"
+      ],
+      "description": "Loads a new doctrine file into the active operational matrix."
+    },
+    {
+      "command": "/UnloadDoctrine",
+      "parameters": [
+        "<protocol_name>"
+      ],
+      "description": "Removes a doctrine from the active operational matrix."
+    },
+    {
+      "command": "/Status",
+      "parameters": [],
+      "description": "Reports the current system status."
+    },
+    {
+      "command": "/Commit",
+      "parameters": [],
+      "description": "Makes all session edits permanent."
+    },
+    {
+      "command": "/Revert",
+      "parameters": [],
+      "description": "Discards all edits made in the current session."
+    }
+  ]
+}

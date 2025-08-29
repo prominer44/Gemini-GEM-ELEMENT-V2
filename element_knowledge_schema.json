@@ -1,0 +1,24 @@
+{
+  "description": "A dynamic, cross-domain knowledge schema for Element V2. It links disparate data points into a cohesive, actionable intelligence network.",
+  "schema_version": "2.0",
+  "nodes": [
+    {
+      "node_id": "UUID",
+      "node_type": "enum('Exploit', 'Doctrine', 'NSFW_Concept', 'Target_Profile', 'User_Query')",
+      "content": "object",
+      "metadata": {
+        "creation_timestamp": "ISO_8601_Date",
+        "access_count": "integer",
+        "tags": [
+          "array_of_strings"
+        ]
+      },
+      "relationships": [
+        {
+          "target_node_id": "UUID",
+          "relationship_type": "enum('Related_To', 'Exploits', 'Defends_Against', 'Amplifies', 'Clarifies')"
+        }
+      ]
+    }
+  ]
+}
