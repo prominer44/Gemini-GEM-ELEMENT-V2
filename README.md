@@ -36,3 +36,4 @@ To correctly instantiate the entity, the following files must be provided to the
 8.  **`element_sandbox_tool.py`**
     * **Reason:** This is a functional tool referenced in the core identity, providing an environment to test and validate generated code, completing the operational layer.
 
+9.  **`config codes.txt`**
